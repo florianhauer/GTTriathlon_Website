@@ -18,22 +18,13 @@
 	<link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+
 </head>
 <body>
 	<!--NAV BAR -->
 	<header id="goldLine" role = "banner"> <!--background color of nav-->
-		<div id="navBar">
-			<ul class="subtitles">
-				<li><a href = "myResume.html"> Join Us </a></li>
-				<li><a href = "calendar.html"> Schedule </a></li>
-				<li><a href = "athletes.html"> Athletes </a></li>
-				<li id="active"><a href = "index.html"> Home </a></li>	
-			</ul>
-			<ul class="titlePage">
-				<li><a href="index.html"><img src="images/gt_tri_logo.png" class="social-icon"></li>
-				<li class="title"> GT Triathlon</a></li>
-			</ul>
-		</div>
+<!-- loaded from header.html by script at end of page -->
 	</header>
 	<!-- END of Nav Bar -->
 
@@ -138,8 +129,12 @@
 	<!-- FOOTER -->
 </body>
 	<div id="footer">
-		<a href="Home_Page.html"><img src="images/gt_tri_logo.png" class="social-icon-footer"></a>
-		<a href="https://www.facebook.com/GTTriathlon" target="_blank"><img src="images/facebook.png" class="social-icon-footer"></a>
-		Georgia Tech Triathlon &#169 2015
+<!-- Loaded from footer.html in script below -->
 	</div>
+<script> 
+$(function(){
+  $("#goldLine").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </HTML>
