@@ -1,0 +1,253 @@
+/*
+  Author: Daniel Barrundia
+  Description: This is the custom theme created for the GT Triathlon
+  Date Last Modified: June 5, 2015
+  Version: 1.0
+*/
+@charset "UTF-8";
+/* CSS Document */
+html{
+  line-height: 150%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+	background-color: #DFE2DB; 
+}
+/*------------------------------------------------*/
+#goldLine{
+  width: 100%;
+  height: 44px;
+  background-color: #003049;
+  position: fixed;
+}
+#navBar{
+  font-family: "Courier New", Courier, monospace;
+	width: fill;
+	margin: 0 auto;
+  list-style: none;
+}
+/* titlePage = My name in the navBar(link homepage) */
+#navBar .titlePage li {
+    float: left;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 20px;
+    list-style: none;
+}
+#navBar .titlePage li a:link, a:visited{
+    text-decoration: none;
+}
+#navBar .titlePage li a:hover {
+    color: #E0AA0F;
+}
+/*subtitles = are the links to access on page*/
+#navBar ul .subtitles {
+  font-size: 18px;
+	margin: 0 auto;
+	height: 38px;
+}
+#navBar .subtitles li {
+	float: right;
+  list-style: none;
+}
+#navBar .subtitles li a:link, a:visited{
+	display: block;
+	color: #FFF;
+	padding: 10px;
+	text-decoration: none; 
+}
+#navBar .subtitles li a:hover{
+	background-color: #E0AA0F;
+}
+
+#active a{
+    display: block;
+    background-color: #E0AA0F;
+    text-decoration: none;
+/*    height: 38px;*/
+}
+/*END OF NAV BAR HEADER*/
+/*------------------------------------------------*/
+
+#mainImage {
+	width: 100%;
+  height: 400px;
+  background: url(Images/backgroundImage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#calendarMainImage {
+  width: 100%;
+  height: 300px;
+  background: url(Images/CalendarImage.jpg) no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#leftCol{
+	width: 33.33%;
+  height: 480px;
+	float: left;
+  text-align: center;
+  margin-bottom: 2px;
+}
+#midCol{
+	width: 66.5%;
+  height: 480px;
+	float: left;
+  text-align: center;
+  margin-bottom: 2%;
+/*  overflow-y: scroll;*/
+}
+#footer{
+	clear: both;
+	height: 30px;
+	background-color: #003049;
+	color: white;
+	text-align: center;
+	font-size: 11px;
+	padding-top: 10px;
+
+}
+a.wrapper {
+/*  padding: 5px 10px;*/
+  margin-top: 1em;
+  text-decoration: none;
+  background-color: #F0F0F0;
+/*  margin: 50px auto;*/
+  color: #666;
+}
+a.left{
+  float: left;
+  margin-left: 4em;
+}
+a.right{
+  float: right;
+  margin-right: 4em;
+}
+/* GT Triathlon LOGO */
+.social-icon {
+  width: 26px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.social-icon-footer {
+  width: 26px;
+  padding-left: 10px;
+  float: left;
+}
+/* GT Triathlon HEADER */
+.title {
+  font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+  color: #E0AA0F;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+#subtitle {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  line-height: 70px;
+  text-align: center;
+}
+#content {
+  height:500px;
+  overflow: auto;
+}
+#paragraph-welcome {
+  text-align: center;
+  background-color: transparent;
+/*  height: 300px;*/
+  width: 90%;
+/*  overflow-y: hidden;*/
+  margin-left: auto;
+  margin-right: auto;
+  border:2px solid #c8c8c8;
+  display:table;
+  border-radius:11px;
+  -webkit-border-radius:11px;
+  -moz-border-radius:11px
+}
+#paragraph {
+  text-align: center;
+  background-color: transparent;
+  height: 300px;
+  width: 90%;
+  overflow-y: scroll;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border:2px solid #c8c8c8;
+  display:table;
+  border-radius:11px;
+  -webkit-border-radius:11px;
+  -moz-border-radius:11px
+}
+#row {
+  border-top: #333 solid thin;
+  height: 20px;
+  width: 100%;
+}
+/** SPONSORS **/
+.sponsor-div {
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+}
+.sponsor-box {
+  width:140px;
+  height:140px;
+  margin:0px 8px 10px 8px;
+  float:left;
+  border:2px solid #c8c8c8;
+  display:table;
+  border-radius:11px;
+  -webkit-border-radius:11px;
+  -moz-border-radius:11px;
+}
+.sponsor-box:hover {
+  border:2px solid #242424;
+}
+.sponsor-cell {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center
+}
+.sponsor-img {
+  max-width:125px;
+  max-height:125px;
+  height:auto;
+  width:auto
+}
+.members-box {
+  min-height: 400px;
+  height: auto;
+  position: relative;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border:2px solid #c8c8c8;
+  display:table;
+  border-radius:11px;
+  -webkit-border-radius:11px;
+  -moz-border-radius:11px;
+}
+.members-data {
+  display: table-cell;
+  vertical-align:;
+  background-color: green;
+  padding-right: 1px;
+  padding-left: 1px;
+/*  margin: 2px 8px 10px 6px;*/
+  border:1px solid #c8c8c8;
+  border-radius: 6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+}
