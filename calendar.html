@@ -6,29 +6,19 @@
     <title>
         GT Triathlon
     </title>
-    <link rel="shortcut icon" href="../../Documents/GTTriathlon_Website/Images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../../Documents/GTTriathlon_Website/Images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../Documents/GTTriathlon_Website/personalStyle.css" type="text/css"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">   
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
 </head>
 <body>
     <!--NAV BAR -->
-    <div id="goldLine"> <!--background color of nav-->
-        <div id="navBar">
-            <ul class="subtitles">
-                <li><a href = "myResume.html"> Join Us </a></li>
-                <li id="active"><a href = "Calendar.html"> Calendar </a></li>
-                <li><a href = "Athletes.html"> Athletes </a></li>
-                <li><a href = "Home_Page.html"> Home </a></li>  
-            </ul>
-            <ul class="titlePage">
-                <li><a href="Home_Page.html"><img src="../../Documents/GTTriathlon_Website/Images/GTTri_Logo.png" class="social-icon"></li>
-                <li class="title"> GT Triathlon</a></li>
-            </ul>
-        </div>
-    </div>
+	<header id="goldLine" role = "banner"> <!--background color of nav-->
+<!-- loaded from header.html by script at end of page -->
+	</header>
     <!-- END of Nav Bar -->
 
     <!-- Main Image -->
@@ -37,3 +27,16 @@
     <!--CONTENT-->
 
 <iframe src="https://www.google.com/calendar/embed?title=GT%20Triathlon%20Team%20Workout%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffcc66&amp;src=mdh1lrp11ruoes0p00b31ft2p0%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="100%" height="600" frameborder="4px" scrolling="no"></iframe>
+
+</body>
+<div id="footer">
+<!-- Loaded from footer.html in script below -->
+	</div>
+<script> 
+$(function(){
+  $("#goldLine").load("header.html", function() {
+  	$("#nav_calendar").attr('id','active');
+}); 
+  $("#footer").load("footer.html"); 
+});
+</script> 

@@ -133,7 +133,9 @@
 	</div>
 <script> 
 $(function(){
-  $("#goldLine").load("header.html"); 
+  $("#goldLine").load("header.html", function() {
+  	$("#nav_home").attr('id','active');
+}); 
   $("#footer").load("footer.html"); 
 });
 </script> 
