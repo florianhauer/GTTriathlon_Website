@@ -233,21 +233,37 @@ a.right{
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-  border:2px solid #c8c8c8;
+ /* border:2px solid #c8c8c8;
   display:table;
   border-radius:11px;
   -webkit-border-radius:11px;
-  -moz-border-radius:11px;
+  -moz-border-radius:11px;*/
 }
 .members-data {
-  display: table-cell;
+  display: inline-block;
+  width: 400px;
+  height: 300px;
   vertical-align:;
-  background-color: green;
-  padding-right: 1px;
-  padding-left: 1px;
+  background-color: pink;
+  padding: 5px;
+  margin: 5px;
 /*  margin: 2px 8px 10px 6px;*/
   border:1px solid #c8c8c8;
   border-radius: 6px;
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
+}
+
+.athlete_picture{
+  display:inline-block;
+  margin: 8px;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+.athlete_inside_content{
+  display:inline-block;
+  margin: 8px;
+  vertical-align:top;
 }
