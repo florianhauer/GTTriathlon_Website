@@ -231,8 +231,11 @@ a.right{
   height: auto;
   position: relative;
   width: 95%;
+  /*width: -moz-min-content; width: -webkit-min-content; width: min-content;*/
   margin-left: auto;
   margin-right: auto;
+  background-color: #003049;
+  text-align: justify;
  /* border:2px solid #c8c8c8;
   display:table;
   border-radius:11px;
@@ -244,11 +247,11 @@ a.right{
   width: 400px;
   height: 300px;
   vertical-align:;
-  background-color: pink;
+  background-color: #E0AA0F;
   padding: 5px;
   margin: 5px;
 /*  margin: 2px 8px 10px 6px;*/
-  border:1px solid #c8c8c8;
+  border:3px solid #003049;
   border-radius: 6px;
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
