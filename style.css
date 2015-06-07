@@ -14,7 +14,8 @@ html{
     margin: 0;
 }
 body{
-	background-color: #DFE2DB; 
+  background-color: #DFE2DB; 
+  z-index: 0;
 }
 /*------------------------------------------------*/
 #goldLine{
@@ -22,6 +23,7 @@ body{
   height: 44px;
   background-color: #003049;
   position: fixed;
+  z-index: 1000;
 }
 #navBar{
   font-family: "Courier New", Courier, monospace;
@@ -201,7 +203,7 @@ a.right{
   margin-right: auto;
   height: 250px;
 }
-.sponsor-box {
+.sponsor-box123 {
   width:140px;
   height:140px;
   margin:0px 8px 10px 8px;
@@ -212,7 +214,7 @@ a.right{
   -webkit-border-radius:11px;
   -moz-border-radius:11px;
 }
-.sponsor-box:hover {
+.sponsor-box123:hover {
   border:2px solid #242424;
 }
 .sponsor-cell {
@@ -234,8 +236,8 @@ a.right{
   /*width: -moz-min-content; width: -webkit-min-content; width: min-content;*/
   margin-left: auto;
   margin-right: auto;
-  background-color: #003049;
-  text-align: justify;
+  /*background-color: #003049;*/
+  text-align: center;
  /* border:2px solid #c8c8c8;
   display:table;
   border-radius:11px;
@@ -243,18 +245,38 @@ a.right{
   -moz-border-radius:11px;*/
 }
 .members-data {
+  text-align: left;
   display: inline-block;
   width: 400px;
-  height: 300px;
+  height: 400px;
   vertical-align:;
-  background-color: #E0AA0F;
   padding: 5px;
-  margin: 5px;
+  margin: 15px;
 /*  margin: 2px 8px 10px 6px;*/
-  border:3px solid #003049;
+  border:5px solid #E0AA0F;
   border-radius: 6px;
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
+  box-shadow: 10px 10px 5px;
+}
+
+.athlete_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.athlete_name{
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.athlete_major{
+  margin-bottom: 20px;
+}
+
+.athlete_quote_title{
+  font-weight: bold;
 }
 
 .athlete_picture{
@@ -262,10 +284,10 @@ a.right{
   margin: 8px;
   width: 150px;
   height: 150px;
-  background-color: red;
 }
 
 .athlete_inside_content{
+  width: 200px;
   display:inline-block;
   margin: 8px;
   vertical-align:top;
