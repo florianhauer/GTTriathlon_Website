@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        GT Triathlon
+    </title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">   
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+</head>
+<body>
+    <!--NAV BAR -->
+	<header id="goldLine" role = "banner"> <!--background color of nav-->
+<!-- loaded from header.html by script at end of page -->
+	</header>
+    <!-- END of Nav Bar -->
+
+    <!-- Main Image -->
+    <div id="calendarMainImage">
+    </div>
+    <!--CONTENT-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=134518519907583";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="center1">
+<div class="inline-block11">
+<div class="fb-page" data-href="https://www.facebook.com/GTTriathlon" data-width="500" data-height="621" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/GTTriathlon"><a href="https://www.facebook.com/GTTriathlon">Georgia Tech Triathlon Team</a></blockquote></div></div>
+</div>
+<div class="inline-block11">
+<iframe height='160' width='500' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/clubs/51441/latest-rides/a404ecde306e0ebf28ac86ddf38133bd415c8fb8?show_rides=false'></iframe>
+<iframe height='454' width='500' frameborder='0' allowtransparency='true' scrolling='yes' src='https://www.strava.com/clubs/51441/latest-rides/a404ecde306e0ebf28ac86ddf38133bd415c8fb8?show_rides=true'></iframe>
+</div>
+</div>
+
+</body>
+<div id="footer">
+<!-- Loaded from footer.html in script below -->
+	</div>
+<script> 
+$(function(){
+  $("#goldLine").load("header.html", function() {
+  	$("#nav_social").attr('id','active');		//set id of nav bar item to be highlighted instead of nav_calendar 
+}); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
