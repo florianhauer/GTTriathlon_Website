@@ -12,6 +12,7 @@ html{
 *{
     padding: 0;
     margin: 0;
+    box-sizing: content-box;
 }
 body{
   background-color: #DFE2DB; 
@@ -25,6 +26,9 @@ body{
   position: fixed;
   z-index: 1000;
 }
+#header_space{
+  height: 44px;
+}
 #navBar{
   font-family: "Courier New", Courier, monospace;
 	width: fill;
@@ -32,7 +36,13 @@ body{
   list-style: none;
 }
 /* titlePage = My name in the navBar(link homepage) */
-#navBar .titlePage li {
+#navBar .titlePage{
+  float:left ;
+}
+#navBar .subtitles{
+  float:right ;
+}
+#navBar .titlePage li{
     float: left;
     padding-top: 10px;
     padding-left: 5px;
@@ -47,9 +57,9 @@ body{
     color: #E0AA0F;
 }
 /*subtitles = are the links to access on page*/
-#navBar ul .subtitles {
+#navBar .subtitles {
   font-size: 18px;
-	margin: 0 auto;
+	margin: 0px;
 	height: 38px;
 }
 #navBar .subtitles li {
@@ -130,11 +140,11 @@ a.wrapper {
 }
 a.left{
   float: left;
-  margin-left: 4em;
+  /*margin-left: 4em;*/
 }
 a.right{
   float: right;
-  margin-right: 4em;
+  /*margin-right: 4em;*/
 }
 /* GT Triathlon LOGO */
 .social-icon {
