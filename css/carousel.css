@@ -5,6 +5,13 @@
 .carousel {
   height: 450px;
   margin-bottom: 60px;
+  width: 100%;
+}
+.carousel-inner{
+  width: 100%;
+}
+.item{
+  width: 100%;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -19,6 +26,9 @@
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
+  left: -9999px;  /*important */
+  right: -9999px;  /*important */
+  margin: 0 auto;  /*important */
   /*min-width: 100%;*/
   height: 450px;
   max-width: none;
