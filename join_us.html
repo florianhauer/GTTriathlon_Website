@@ -2,17 +2,25 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         GT Triathlon
     </title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">   
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
     <!--NAV BAR -->
@@ -20,10 +28,12 @@
 <!-- loaded from header.html by script at end of page -->
 	</header>
     <!-- END of Nav Bar -->
+	<div id="header_space"></div>
+	<div id="carousel_div"></div>
 
     <!-- Main Image -->
-    <div id="calendarMainImage">
-    </div>
+    <!--<div id="calendarMainImage">
+    </div> -->
     <!--CONTENT-->
 
 Join us!
@@ -38,5 +48,7 @@ $(function(){
   	$("#nav_join_us").attr('id','active');		//set id of nav bar item to be highlighted instead of nav_calendar 
 }); 
   $("#footer").load("footer.html"); 
+  $("#carousel_div").load("include_carousel.html"); 
 });
 </script> 
+<script src="js/bootstrap.min.js"></script>
