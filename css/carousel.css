@@ -36,9 +36,9 @@
   max-width: none;
 }
 .carousel-inner > .item > .second-slide{
-  opacity: 0.5;
+  opacity: 0.9;
 }
 .carousel-inner > .item > .third-slide {
-  opacity: 0.2;
+  opacity: 0.9;
 }
 
