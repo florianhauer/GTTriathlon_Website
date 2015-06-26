@@ -152,6 +152,7 @@ a.right{
   padding-left: 20px;
   padding-bottom: 10px;
 }
+
 .social-icon-footer {
   width: 26px;
   padding-left: 10px;
@@ -243,63 +244,70 @@ a.right{
   -moz-border-radius:11px;*/
 }
 .members-data {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   text-align: left;
   display: inline-block;
   width: 400px;
   height: 400px;
-  vertical-align:;
   padding: 5px;
   margin: 15px;
-/*  margin: 2px 8px 10px 6px;*/
-  border:5px solid #E0AA0F;
+  border: 5px solid #E0AA0F;
   border-radius: 6px;
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
   box-shadow: 10px 10px 5px;
 }
-
-.athlete_title{
+.athlete_name{
   text-align: center;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 3em;
 }
-
-.athlete_name{
-  font-weight: bold;
-  font-size: 150%;
-}
-
-.athlete_major{
-  margin-bottom: 20px;
-}
-
-.athlete_quote_title{
-  font-weight: bold;
-}
-
-.athlete_picture{
-  display:inline-block;
-  margin: 8px;
-  width: 150px;
-  height: 150px;
-}
-
-.athlete_inside_content{
+.athlete_info{
   width: 200px;
   display:inline-block;
   margin: 8px;
   vertical-align:top;
 }
-
+.athlete_title{
+  font-weight: bold;
+  font-size: 2em;
+}
+.athlete_question{
+  font-size:1.2em;
+  text-decoration: underline;
+}
+.athlete_answer{
+  font-family: Century Gothic;
+  padding-top: 1px;
+  color: #003049;
+  font-style: italic;
+}
+.athlete_image {
+  display:inline-block;
+  position: relative;
+  width: 180px;
+}
+.athlete_image img {
+  height: 250px;
+  border: 2px solid #003049;
+  -webkit-box-shadow: 2px 2px 2px black;
+     -moz-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+}
 .inline-block11{
   display: inline-block;
   width: 40%;
 }
-
 .center1{
   text-align: center;
   width: 100%;
 }
+.social-icon-athletesPage {
+  padding-left: 5px;
+  width: 65px;
+  border-radius: 20%;
+}
+/*------- END OF ATHLETES -----------*/
 .circular {
   margin-bottom: 5px;
   margin-left: auto;
@@ -333,3 +341,6 @@ a.right{
 img.youtube-thumb { bottom: 0; display: block; left: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; height: auto }
 div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("http://i.imgur.com/TxzC70f.png") no-repeat; }
 #youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+
+/*POLAROID TEST*/
+

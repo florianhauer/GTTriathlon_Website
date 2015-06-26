@@ -61,22 +61,20 @@ $(function(){
 
 <script id="theTmpl" type="text/x-jsrender">
 <div class="members-data">
-    <div class="athlete_title"> {{:title}} </div>
-    <div class="athlete_content">
-	<div class="athlete_picture">
+    <div class="athlete_name"> {{:name}} </div>
+	<div class="athlete_image">
 	    <img src="images/athletes/{{:picture}}" width="100%">
 	</div>
-	<div class="athlete_inside_content">
-	    <div class="athlete_name"> {{:name}} </div>
-	    <div class="athlete_major"> {{:major}} </div>
-	    <div class="athlete_quote_title"> {{:quote_title1}} </div>
-	    <div class="athlete_quote">{{:quote1}} </div>
-	    <div class="athlete_quote_title"> {{:quote_title2}} </div>
-	    <div class="athlete_quote">{{:quote2}} </div>
-	    <div class="athlete_quote_title"> {{:quote_title3}} </div>
-	    <div class="athlete_quote">{{:quote3}} </div>
+	<div class="athlete_info">
+        <div class="athlete_title"> {{:title}} <img src="images/gt_tri_logo2.png" class="social-icon-athletesPage"></div>
+	    <div> {{:major}} </div></br>
+	    <div class="athlete_question"> {{:quote_title1}} </div>
+	    <div class="athlete_answer">{{:quote1}} </div>
+	    <div class="athlete_question"> {{:quote_title2}} </div>
+	    <div class="athlete_answer">{{:quote2}} </div>
+	    <div class="athlete_question"> {{:quote_title3}} </div>
+	    <div class="athlete_answer">{{:quote3}} </div>
 	</div>
-    </div>
 </div>
 </script>
 
@@ -91,7 +89,7 @@ var data = [
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
+    "quote_title3": "Fun Fact",
     "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
   },
   {
