@@ -1,0 +1,112 @@
+<!-- 
+    Author: Daniel Barrundia & Florian Hauer
+    Description: This is the Home Page for the Georgia Tech Triathlon Website.
+    Date Last Modified: June 5, 2015
+    Version: 1.0
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+        GT | Triathlon Team
+    </title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for CAROUSEL -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <!-- CSS for Homepage -->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- online CSS for FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">   
+</head>
+<body>
+    <!--NAV BAR (will be loaded from header.html @end of page)-->
+    <div id="goldLine" role = "banner"></div>
+    <!-- END of Nav Bar -->
+    <!-- Main Image (will be loaded from include_carousel.html @end of page-->
+    <div id="header_space"></div>
+    <div id="carousel_div"></div>
+
+<!-- FORM -->
+<script src="http://www.emailmeform.com/builder/forms/jsform/lmVtMFw9E8461c2drj5iGUf" type="text/javascript"></script>
+<div style="margin-top:18px;text-align:center"></div>
+
+    <!-- SPONSORS -->
+<div id="sponsor-div">
+        <div id="subtitle">SPONSORS</div>
+        <div id="sponsor-box">
+            <a href="http://podiumms.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/podium-ms-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.flocycling.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/flo-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.enduranceconcepts.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/ec-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.starlightapparel.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/starlight-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.xterra.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/xterra-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.rockymountainpizza.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/rocky_mountain_logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+        </div>
+</div> <!-- End of Sponsors -->
+</body>
+
+<!-- FOOTER -->
+<div id="footer"> <!-- Loaded from footer.html in script below -->
+</div>
+
+<!-- SCRIPTS -->
+<script> 
+    $(function(){
+      $("#goldLine").load("header.html", function() {
+        $("#nav_join_us").attr('id','active');
+      }); 
+      $("#footer").load("footer.html"); 
+      $("#carousel_div").load("include_carousel.html"); 
+    });
+</script>
+<script src="js/bootstrap.min.js"></script>
+<!-- end of SCRIPTS -->
+</HTML> <!-- end of html
