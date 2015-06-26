@@ -1,3 +1,9 @@
+<!-- 
+    Author: Daniel Barrundia & Florian Hauer
+    Description: This is the Calendar Page for the Georgia Tech Triathlon Website.
+    Date Last Modified: June 26, 2015
+    Version: 2.0
+ -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -5,51 +11,105 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>
-        GT Triathlon
+        GT | Calendar | Triathlon Team
     </title>
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for CAROUSEL -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <!-- CSS for Homepage -->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- online CSS for FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">   
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
-<!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
-    <!--NAV BAR -->
-	<header id="goldLine" role = "banner"> <!--background color of nav-->
-<!-- loaded from header.html by script at end of page -->
-	</header>
+    <!--NAV BAR (will be loaded from header.html @end of page)-->
+    <div id="goldLine" role = "banner"></div>
+    <div id="header_space"></div>
     <!-- END of Nav Bar -->
-	<div id="header_space"></div>
-	<div id="carousel_div"></div>
+    <!-- Main Image (will be loaded from include_carousel.html @end of page-->
+    <div id="carousel_div"></div>
 
-    <!-- Main Image -->
-   <!-- <div id="calendarMainImage">
-    </div> -->
+
     <!--CONTENT-->
-<div id="content">
+    <div id="content-calendar">
+        <!-- STRAVA SOCIAL MEDIA (latest rides) -->
 		<div id="leftCol">	
 			<div id="subtitle">ACTIVITIES</div>			
-
-<iframe height='160' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/clubs/51441/latest-rides/a404ecde306e0ebf28ac86ddf38133bd415c8fb8?show_rides=false'></iframe>
-<iframe height='454' width='100%' frameborder='0' allowtransparency='true' scrolling='yes' src='https://www.strava.com/clubs/51441/latest-rides/a404ecde306e0ebf28ac86ddf38133bd415c8fb8?show_rides=true'></iframe>
-		</div>
+            <iframe height='160' width='98%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/clubs/51441/latest-rides/a404ecde306e0ebf28ac86ddf38133bd415c8fb8?show_rides=false'></iframe>
+            <iframe height='654' width='98%' frameborder='0' allowtransparency='true' scrolling='yes' src='https://www.strava.com/clubs/51441/latest-rides/a404ecde306e0ebf28ac86ddf38133bd415c8fb8?show_rides=true'></iframe>
+		</div> <!-- END of Strava -->
+        <!-- GOOGLE Calendar for Team's Schedule -->
 		<div id="midCol">
-			<div id="subtitle"> SCHEDULED WORKOUTS</div>	
-<iframe src="https://www.google.com/calendar/embed?title=GT%20Triathlon%20Team%20Workout%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffcc66&amp;src=mdh1lrp11ruoes0p00b31ft2p0%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="100%" height="600" frameborder="4px" scrolling="no"></iframe>
-		</div>
+			<div id="subtitle">WORKOUTS</div>
+            <iframe src="https://www.google.com/calendar/embed?title=GT%20Triathlon%20Team%20Workout%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffcc66&amp;src=mdh1lrp11ruoes0p00b31ft2p0%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="98%" height="600" frameborder="4px" scrolling="no" style="border-left: 4px"></iframe>
+		</div> <!-- END of Calendar -->
+    </div> <!-- END of Main Content -->
+
+    <!-- SPONSORS -->
+    <div id="sponsor-div">
+        <div id="subtitle">SPONSORS</div>
+        <div id="sponsor-box">
+            <a href="http://podiumms.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/podium-ms-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.flocycling.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/flo-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.enduranceconcepts.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/ec-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.starlightapparel.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/starlight-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.xterra.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/xterra-logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+            <a href="http://www.rockymountainpizza.com/">
+                <div class="sponsor-box123">
+                    <div class="sponsor-cell">
+                        <img src="images/rocky_mountain_logo.png" class="sponsor-img">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div> <!-- End of Sponsors -->
+
+</body> <!-- END of Body -->
+
+<!-- FOOTER -->
+<div id="footer"><!-- Loaded from footer.html in script below -->
 </div>
-</body>
-<div id="footer">
-<!-- Loaded from footer.html in script below -->
-	</div>
+<!-- SCRIPTS -->
 <script> 
 $(function(){
   $("#goldLine").load("header.html", function() {
@@ -60,3 +120,5 @@ $(function(){
 });
 </script> 
 <script src="js/bootstrap.min.js"></script>
+<!-- end of SCRIPTS -->
+</HTML> <!-- end of html -->
