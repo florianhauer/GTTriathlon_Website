@@ -189,21 +189,16 @@ a.right{
   width: 100%;
 }
 /** SPONSORS **/
-#sponsor-div {
-  background-color: #ECECEA;
+.sponsor-div {
   border-top: solid;
   border-top-color: black;
   width: 100%;
+  margin: 0 auto;
   height: 250px;
   text-align:center;
 }
-#sponsor-div > a {
+.sponsor-div > a {
   display:inline-block;
-}
-#sponsor-box {
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .sponsor-box123 {
   width:140px;
