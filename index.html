@@ -2,23 +2,30 @@
     Author: Daniel Barrundia & Florian Hauer
     Description: This is the Home Page for the Georgia Tech Triathlon Website.
     Date Last Modified: June 5, 2015
-    Version: 1.0
+    Version: 2.0
  -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="triathlon, georgia tech, gttriathlon, swim, bike, run, georgia tech triathlon, triathlon team, triathlon club">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>
-		GT | Triathlon Team
-	</title>
-    <!-- FAVICON -->
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Georgia Tech Triathlon Website"/>
 
+    <meta property="og:site_name" content="Georgia Tech Triathlon" />
+    <meta property="og:url" content="http://GTtriathlon.com/"/>
+    <meta property="og:image" content="https://gttriathlon.com/images/gt_tri_logo.png"/>
+    <meta property="og:title" content="Georgia Tech Triathlon"/>
+    <meta property="og:description" content="GT Triathlon - Georgia Tech's Triathlon Team"/>
+
+    <link rel="canonical" href="http://GTtriathlon.com/"/> 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+
+    <!-- jquery -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,18 +36,23 @@
     <!-- online CSS for FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">   
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css"> 
+
+    <title>
+        GT | Triathlon Team
+    </title>  
 </head>
 <body>
-	<!--NAV BAR (will be loaded from header.html @end of page)-->
-	<div id="goldLine" role = "banner"></div>
-	<!-- END of Nav Bar -->
-    <!-- Main Image (will be loaded from include_carousel.html @end of page-->
-	<div id="header_space"></div>
+<div class="header-bg"></div>
+	
+<div class="wrapper">
+    <!--id="goldLine" (will be used to load header.html @end of page)-->
+    <div id="goldLine" class="clearfix"></div>
+    <!--id="carousel_div" (will be used to load include_carousel.html @end of page)-->
 	<div id="carousel_div"></div>
 	
 
-<!-- code to fetch Facebook Feed -->
+    <!-- code to fetch Facebook Feed -->
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -51,32 +63,32 @@
     </script>
 
     <!--CONTENT-->
-	<div id="content">
-		<div id="leftCol">
-			<div id="subtitle">NEWS</div>				
+	<div class="content">
+		<div class="leftCol">
+			<div class="subtitle">NEWS</div>				
             <div class="fb-page" data-href="https://www.facebook.com/GTTriathlon" data-width="600" data-height="1100" data-hide-cover="false" data-show-facepile="false" data-show-posts="true" overflow: scroll margin-top "20"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/GTTriathlon"><a href="https://www.facebook.com/GTTriathlon">Georgia Tech Triathlon Team</a></blockquote></div></div>
 		</div> <!--end of left column-->
 
-		<div id="midCol">
-                <div id="subtitle">WELCOME</div>
-                <div id="paragraph">
+		<div class="midCol">
+                <div class="subtitle">WELCOME</div>
+                <div class="paragraph">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                     </p>
                 </div>
 
                 <div class="circular"></div>
-                <div id="paragraph">
-                    <div id="subtitleSmaller">TTITLE</div>
+                <div class="paragraph">
+                    <div class="subtitle smaller">TTITLE</div>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 </div>
                 <div class="circular"></div>
                 
-                <div id="paragraph">
-                    <div id="subtitleSmaller">TITLE</div>
+                <div class="paragraph">
+                    <div class="subtitle smaller">TITLE</div>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 </div>
                 
-                <div id="subtitle">WELCOME</div>
+                <div class="subtitle">WELCOME</div>
                 <div class="youtube-container">
                     <div class="youtube-player" data-id="nBgWhuETJcg"></div>
                 </div>
@@ -90,12 +102,13 @@
     <!-- SPONSORS -->
     <div class="sponsor-div">
 	</div>
- <!-- End of Sponsors -->
+    <!-- FOOTER -->
+    <div id="footer"> <!-- id="footer" used to load footer.html @end script -->
+    </div>
+</div> <!-- End of Content Wrapper -->
 </body>
 
-<!-- FOOTER -->
-<div id="footer"> <!-- Loaded from footer.html in script below -->
-</div>
+
 
 <!-- SCRIPTS -->
 <script> 

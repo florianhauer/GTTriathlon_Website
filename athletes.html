@@ -1,61 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+    Author: Daniel Barrundia & Florian Hauer
+    Description: This is the Calendar Page for the Georgia Tech Triathlon Website.
+    Date Last Modified: June 26, 2015
+    Version: 2.0
+ -->
+<!DOCTYPE HTML>
 <HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="triathlon, georgia tech, gttriathlon, swim, bike, run, georgia tech triathlon, triathlon team, triathlon club">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        GT Triathlon
-    </title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">   
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
-	<script type="text/javascript" src="js/jsrender.min.js" ></script>
+    <meta name="description" content="Georgia Tech Triathlon Website"/>
+
+    <meta property="og:site_name" content="Georgia Tech Triathlon" />
+    <meta property="og:url" content="http://GTtriathlon.com/"/>
+    <meta property="og:image" content="https://gttriathlon.com/images/gt_tri_logo.png"/>
+    <meta property="og:title" content="Georgia Tech Triathlon"/>
+    <meta property="og:description" content="GT Triathlon - Georgia Tech's Triathlon Team"/>
+
+    <link rel="canonical" href="http://GTtriathlon.com/"/> 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for CAROUSEL -->
     <link href="css/carousel.css" rel="stylesheet">
+    <!-- CSS for Homepage -->
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- online CSS for FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css"> 
+
+    <title>
+        GT | Triathlon Team
+    </title>  
 </head>
 <body>
-    <!--NAV BAR -->
-	<header id="goldLine" role = "banner"> <!--background color of nav-->
-<!-- loaded from header.html by script at end of page -->
-	</header>
-    <!-- END of Nav Bar -->
-	<div id="header_space"></div>
-	<div id="carousel_div"></div>
+<div class="header-bg"></div>
+    
+<div class="wrapper">
+    <!--id="goldLine" (will be used to load header.html @end of page)-->
+    <div id="goldLine" class="clearfix"></div>
+    <!--id="carousel_div" (will be used to load include_carousel.html @end of page)-->
+    <div id="carousel_div"></div>
 
-    <!-- Main Image -->
-    <!-- <div id="calendarMainImage">
-    </div> -->
     <!--CONTENT-->
-
-Athletes page
-<div id='athletes' class="members-box"></div>
-
+    <div id='athletes' class="members-box"></div>
     <!-- SPONSORS -->
     <div class="sponsor-div">
 	</div>
- <!-- End of Sponsors -->
+    <!-- FOOTER -->
+    <div id="footer"><!-- Loaded from footer.html in script below -->
+    </div>
+</div>
 </body>
-<div id="footer">
-<!-- Loaded from footer.html in script below -->
-	</div>
 <script> 
-$(function(){
-  $("#goldLine").load("header.html", function() {
-  	$("#nav_athletes").attr('id','active');		//set id of nav bar item to be highlighted instead of nav_calendar 
-}); 
-  $("#footer").load("footer.html"); 
-  $("#carousel_div").load("include_carousel.html"); 
-      $(".sponsor-div").load("include_sponsors.html"); 
-});
+    $(function(){
+      $("#goldLine").load("header.html", function() {
+      	$("#nav_athletes").attr('id','active');		//set id of nav bar item to be highlighted instead of nav_calendar 
+    }); 
+      $("#footer").load("footer.html"); 
+      $("#carousel_div").load("include_carousel.html"); 
+          $(".sponsor-div").load("include_sponsors.html"); 
+    });
 </script> 
 <script src="js/bootstrap.min.js"></script>
 
