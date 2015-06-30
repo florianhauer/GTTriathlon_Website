@@ -27,6 +27,8 @@
 
     <!-- jquery -->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+    <!-- jsrender -->
+    <script type="text/javascript" src="js/jsrender.min.js" ></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for CAROUSEL -->
@@ -75,12 +77,12 @@
 
 <script id="theTmpl" type="text/x-jsrender">
 <div class="members-data">
-    <div class="athlete_name"> {{:name}} </div>
+    <div class="athlete_name"> {{:name}} <img src="images/gt_tri_logo2.png" class="social-icon-athletesPage"></div>
 	<div class="athlete_image">
-	    <img src="images/athletes/{{:picture}}" width="100%">
+	    <img src="images/athletes/{{:picture}}">
 	</div>
 	<div class="athlete_info">
-        <div class="athlete_title"> {{:title}} <img src="images/gt_tri_logo2.png" class="social-icon-athletesPage"></div>
+            <div class="athlete_title"> {{:title}} </div>
 	    <div> {{:major}} </div></br>
 	    <div class="athlete_question"> {{:quote_title1}} </div>
 	    <div class="athlete_answer">{{:quote1}} </div>
@@ -100,6 +102,18 @@ var data = [
     "picture" : "nick.jpg",
     "major": "ISyE",
     "quote_title1": "Favorite distance",
+    "quote1": "70.3",
+    "quote_title2": "Favorite race",
+    "quote2": "2014 Collegiate Nationals, Tempe AZ",
+    "quote_title3": "Fun Fact",
+    "quote3": "Post-Ride Mexican food is a must"
+  },
+  {
+    "title" : "Vice President - Sponsors",
+    "name": "Daniel guatmallan",
+    "picture" : "daniel.jpg",
+    "major": "CS",
+    "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
@@ -107,124 +121,136 @@ var data = [
     "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
   },
   {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+    "title" : "Treasurer",
+    "name": "Elizabeth Faucer",
+    "picture" : "liz.jpg",
+    "major": "Math",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": "Not a business major"
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+    {
+    "title" : "",
+    "name": "Chris Douglas",
+    "picture" : "chris.jpg",
+    "major": "AE",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": "Leader of quad squad"
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+      {
+    "title" : "",
+    "name": "Brian Doyle",
+    "picture" : "brian.jpg",
+    "major": "MsE",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": "Polymers rul3"
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+      {
+    "title" : "",
+    "name": "Aaron Darton",
+    "picture" : "aaron.jpg",
+    "major": "AE",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": "I have sick tan lines"
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+      {
+    "title" : "",
+    "name": "Clare Doyle",
+    "picture" : "clare.jpg",
+    "major": "",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": ""
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+      {
+    "title" : "",
+    "name": "Taylor Vold",
+    "picture" : "taylor.jpg",
+    "major": "AE",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": ""
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+      {
+    "title" : "",
+    "name": "Florian Hauer",
+    "picture" : "flo.jpg",
+    "major": "AE",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": "I creep in the bg of pics"
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+      {
+    "title" : "",
+    "name": "Marc Leber",
+    "picture" : "marc.jpg",
+    "major": "BME",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": "I don't acknowledge stop signs"
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+      {
+    "title" : "",
+    "name": "Kyle Boykin",
+    "picture" : "kyle.jpg",
+    "major": "ME",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": "39 mile runs are funsies"
   },
-  {
-    "title" : "President",
-    "name": "Nick Anderson",
-    "picture" : "nick.jpg",
-    "major": "ISyE",
+      {
+    "title" : "",
+    "name": "Phillip Brook",
+    "picture" : "phil.jpg",
+    "major": "MSE",
     "quote_title1": "Favorite distance",
     "quote1": "sobovuhoiuhouhou",
     "quote_title2": "Favorite race",
     "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
-    "quote_title3": "Favorite quote",
-    "quote3": "lfkjnlorebovib ujbnreoib  oywhb i]bhowiub ihjb fkhb hb khebk hbeohb oiyhbeo hibvikhbeoyh bbyh ihfbkheb hbofhb oihbeo"
+    "quote_title3": "Fun Fact",
+    "quote3": "I think taco bell has a faster line than chickfila"
+  },
+      {
+    "title" : "",
+    "name": "Bryful",
+    "picture" : "bry.jpg",
+    "major": "AE",
+    "quote_title1": "Favorite distance",
+    "quote1": "sobovuhoiuhouhou",
+    "quote_title2": "Favorite race",
+    "quote2": "lv jbkhjbk hjbkh kh ohjbk okjh obnkjbkh",
+    "quote_title3": "Fun Fact",
+    "quote3": "half car, half fish"
   }
 ];
 

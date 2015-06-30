@@ -25,7 +25,9 @@ body{
 /*------------------------------------------------*/
 
 .wrapper{ 
-  width: 980px;
+  width: 100%;
+  max-width: 980px;
+  min-width: 700px;
   margin: 0 auto;
   text-align: left;
   min-height: 100%;
@@ -36,14 +38,15 @@ body{
   background-color: #003049;
   position: absolute;
   top: 0;
-  border-top: solid 4px #FDB813;
-  border-bottom: solid 4px #FDB813;
+  /*border-top: solid 4px #FDB813;
+  border-bottom: solid 4px #FDB813;*/
 }
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 /*------------------------------------------------*/
 #goldLine{
+  height: 44px;
   padding: 0;
   margin: 0;
   position: relative;
@@ -57,6 +60,7 @@ body{
 /* titlePage = My name in the navBar(link homepage) */
 #navBar .titlePage{
   float:left;
+  margin: 0;
 }
 #navBar .subtitles{
   float:right;
@@ -126,14 +130,14 @@ body{
 }
 .leftCol{
 	width: 40%;
-  height: 100%;
+ /* height: 100%;*/
 	float: right;
   text-align: center;
   margin-bottom: 2%;
 }
 .midCol{
 	width: 60%;
-  height: 100%;
+ /* height: 100%;*/
 	float: left;
   text-align: center;
   margin-bottom: 2%;
@@ -169,7 +173,7 @@ a.right{
 .social-icon {
   width: 26px;
   padding-left: 20px;
-  padding-bottom: 10px;
+ /* padding-bottom: 8px;*/
 }
 
 .social-icon-footer {
@@ -194,19 +198,20 @@ a.right{
 }
 .content {
 /*  background-color: #ECECEA;*/
-  height:1200px;
+ /* height:1200px;*/
 }
 .content.calendar {
-  height:700px;
+  /*height:700px;*/
 }
 
 /** SPONSORS **/
 .sponsor-div {
+  clear: both;
   border-top: solid;
   border-top-color: black;
   width: 100%;
   margin: 0 auto;
-  height: 250px;
+ /* height: 250px;*/
   text-align:center;
 }
 .sponsor-div > a {
@@ -255,7 +260,7 @@ a.right{
   -moz-border-radius:11px;*/
 }
 .members-data {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  /*font-family: 'Raleway', Helvetica, Arial, sans-serif;*/
   text-align: left;
   display: inline-block;
   width: 400px;
@@ -271,7 +276,7 @@ a.right{
 .athlete_name{
   text-align: center;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .athlete_info{
   width: 200px;
@@ -281,7 +286,7 @@ a.right{
 }
 .athlete_title{
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .athlete_question{
   font-size:1.2em;
@@ -296,14 +301,16 @@ a.right{
 .athlete_image {
   display:inline-block;
   position: relative;
-  width: 180px;
+  width: 160px;
+  margin-left: 20px;
 }
 .athlete_image img {
-  height: 250px;
+  width: 90%;
+  margin: 20px auto;
   border: 2px solid #003049;
-  -webkit-box-shadow: 2px 2px 2px black;
+  /*-webkit-box-shadow: 2px 2px 2px black;
      -moz-box-shadow: 2px 2px 2px black;
-          box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;*/
 }
 .inline-block11{
   display: inline-block;
@@ -315,8 +322,9 @@ a.right{
 }
 .social-icon-athletesPage {
   padding-left: 5px;
-  width: 65px;
+  width: 50px;
   border-radius: 20%;
+  float:right;
 }
 /*------- END OF ATHLETES -----------*/
 .circular {
@@ -337,10 +345,11 @@ a.right{
   margin-bottom: 15px;
   text-align: center;
   background-color: #F6F6F6;
-  height: 150px;
+  /*height: 150px;*/
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
   border:1px solid #c8c8c8;
   border-radius:6px;
   -webkit-border-radius:6px;
