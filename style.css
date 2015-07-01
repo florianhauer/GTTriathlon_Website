@@ -4,6 +4,12 @@
   Date Last Modified: June 5, 2015
   Version: 1.0
 */
+
+/*
+COLORS
+#E0AA0F = GT gold
+003049 = GT navyblue
+*/
 @charset "UTF-8";
 /* CSS Document */
 html{
@@ -23,26 +29,37 @@ body{
   color:#333;
 }
 /*------------------------------------------------*/
-
-.wrapper{ 
-  width: 980px;
-  margin: 0 auto;
-  text-align: left;
-  min-height: 100%;
-}
+/* header-bg: fixed area at top of the screen. */
 .header-bg {
   width: 100%; 
   height: 44px;
   background-color: #003049;
   position: absolute;
   top: 0;
-  border-top: solid 4px #FDB813;
-  border-bottom: solid 4px #FDB813;
 }
+.footer-bg { 
+  width: 100%; 
+  height: 100px; 
+  background-color: #003049; 
+  position: relative;
+  bottom: 0;
+  border-top: solid 2px #E0AA0F;
+  box-shadow: 0 -1px 15px rgba(0,0,0,1);
+}
+
+/*wrapper : fixed space where all the contect will be contained */
+.wrapper{ 
+  width: 980px;
+  margin: 0 auto;
+  text-align: left;
+  min-height: 100%;
+}
+
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 /*------------------------------------------------*/
+/*Style for the Navigation Bar at top of the screen*/
 #goldLine{
   padding: 0;
   margin: 0;
@@ -99,7 +116,6 @@ body{
     display: block;
     background-color: #E0AA0F;
     text-decoration: none;
-/*    height: 38px;*/
 }
 /*END OF NAV BAR HEADER*/
 /*------------------------------------------------*/
