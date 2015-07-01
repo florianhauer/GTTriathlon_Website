@@ -1,0 +1,50 @@
+*{
+  float: none;
+}
+.wrapper{ 
+  width: 100%;
+  min-width: 0;
+}
+.leftCol{
+  display:block;
+  width: 100%;
+}
+.midCol{
+  display:block;
+  width: 100%;
+}
+#navBar{
+  display:none;
+}
+#menu-select{
+  display:block;
+}
+.header-bg{
+  display:none;
+}
+#goldLine{
+  height: auto;
+}
+.carousel {
+  height: 150px;
+  /*margin-bottom: 60px;*/
+  width: 100%;
+}
+.members-data {
+  width:85%;
+  height: auto;
+}
+.athlete_name{
+  font-size: 2em;
+}
+.athlete_image {
+  display:block;
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+.athlete_info{
+  width: auto;
+  display:block;
+  margin: 8px;
+}

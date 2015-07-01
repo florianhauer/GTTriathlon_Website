@@ -35,6 +35,8 @@
     <link href="css/carousel.css" rel="stylesheet">
     <!-- CSS for Homepage -->
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- CSS for mobiles -->
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="mobile.css" />
     <!-- online CSS for FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
@@ -68,6 +70,7 @@
     $(function(){
       $("#goldLine").load("header.html", function() {
       	$("#nav_athletes").attr('id','active');		//set id of nav bar item to be highlighted instead of nav_calendar 
+        $("#menu-select").change(function(){window.location.href = $(this).children("option:selected").val();});
     }); 
       $("#footer").load("footer.html"); 
       $("#carousel_div").load("include_carousel.html"); 

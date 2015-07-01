@@ -33,6 +33,8 @@
     <link href="css/carousel.css" rel="stylesheet">
     <!-- CSS for Homepage -->
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- CSS for mobiles -->
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="mobile.css" />
     <!-- online CSS for FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
@@ -64,12 +66,7 @@
 
     <!--CONTENT-->
 	<div class="content">
-		<div class="leftCol">
-			<div class="subtitle">NEWS</div>				
-            <div class="fb-page" data-href="https://www.facebook.com/GTTriathlon" data-width="600" data-height="1100" data-hide-cover="false" data-show-facepile="false" data-show-posts="true" small_header="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/GTTriathlon"><a href="https://www.facebook.com/GTTriathlon">Georgia Tech Triathlon Team</a></blockquote></div></div>
-		</div> <!--end of left column-->
-
-		<div class="midCol">
+	    <div class="midCol">
                 <div class="subtitle">WELCOME</div>
                 <div class="paragraph">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -94,6 +91,11 @@
                 </div>
 		</div> <!--end of mid column-->
 
+		<div class="leftCol">
+			<div class="subtitle">NEWS</div>				
+            <div class="fb-page" data-href="https://www.facebook.com/GTTriathlon" data-width="600" data-height="1100" data-hide-cover="false" data-show-facepile="false" data-show-posts="true" small_header="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/GTTriathlon"><a href="https://www.facebook.com/GTTriathlon">Georgia Tech Triathlon Team</a></blockquote></div></div>
+		</div> <!--end of left column-->
+
 	</div> <!-- end of content-->
 
     <!--VIDEO-->
@@ -114,6 +116,7 @@
     $(function(){
       $("#goldLine").load("header.html", function() {
       	$("#nav_home").attr('id','active');
+        $("#menu-select").change(function(){window.location.href = $(this).children("option:selected").val();});
       }); 
       $("#footer").load("footer.html"); 
       $("#carousel_div").load("include_carousel.html"); 
