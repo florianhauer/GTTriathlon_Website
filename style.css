@@ -148,7 +148,6 @@ body{
 	width: 60%;
  /* height: 100%;*/
 	float: left;
-  text-align: center;
   margin-bottom: 2%;
 /*  overflow-y: scroll;*/
 }
@@ -216,8 +215,9 @@ a.right{
   font-size: 30px;
 }
 .content {
-/*  background-color: #ECECEA;*/
- /* height:1200px;*/
+  background-color: #F6F6F6;
+  padding: 10px;
+
 }
 .content.calendar {
   /*height:700px;*/
@@ -260,6 +260,35 @@ a.right{
   max-height:125px;
   height:auto;
   width:auto
+}
+/*Button in Paragraph*/
+.paragraph > .button{
+  margin: auto;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #337ab7;
+  border: 2px solid;
+  border-color: #2e6da4;
+
+  display: block;
+  height: 30px;
+  width: 100px;
+  
+  /*Step 3: Text Styles*/
+  color: white;
+  text-align: center;
+  font: 18px;
+   
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.paragraph > a.button {
+  text-decoration: none;
+}
+.paragraph > a.button:hover{
+    transform: scale(1.1);
 }
 /** Athletes **/
 .members-box {
@@ -365,15 +394,16 @@ a.right{
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   }
   .paragraph {
+  font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 16px;
   margin-bottom: 15px;
-  text-align: center;
+  text-align: justify;
   background-color: #F6F6F6;
-  /*height: 150px;*/
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  border:1px solid #c8c8c8;
+  border:3px solid #c8c8c8;
   border-radius:6px;
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
