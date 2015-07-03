@@ -148,7 +148,6 @@ body{
 	width: 60%;
  /* height: 100%;*/
 	float: left;
-  text-align: center;
   margin-bottom: 2%;
 /*  overflow-y: scroll;*/
 }
@@ -216,8 +215,9 @@ a.right{
   font-size: 30px;
 }
 .content {
-/*  background-color: #ECECEA;*/
- /* height:1200px;*/
+  background-color: #F6F6F6;
+  padding: 10px;
+
 }
 .content.calendar {
   /*height:700px;*/
@@ -261,6 +261,35 @@ a.right{
   height:auto;
   width:auto
 }
+/*Button in Paragraph*/
+.paragraph > .button{
+  margin: auto;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #337ab7;
+  border: 2px solid;
+  border-color: #2e6da4;
+
+  display: block;
+  height: 30px;
+  width: 100px;
+  
+  /*Step 3: Text Styles*/
+  color: white;
+  text-align: center;
+  font: 18px;
+   
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.paragraph > a.button {
+  text-decoration: none;
+}
+.paragraph > a.button:hover{
+    transform: scale(1.1);
+}
 /** Athletes **/
 .members-box {
   min-height: 400px;
@@ -280,6 +309,8 @@ a.right{
 }
 .members-data {
   /*font-family: 'Raleway', Helvetica, Arial, sans-serif;*/
+  background-image: url(images/athlete-background.jpeg);
+  background-size: 100%;
   text-align: left;
   display: inline-block;
   width: 400px;
@@ -298,9 +329,12 @@ a.right{
   font-size: 2.5em;
 }
 .athlete_info{
-  width: 200px;
+  min-height: 350px;
+  max-height: 350px;
+  max-width: 200px;
+  font-weight: 900;
+  overflow: hidden;
   display:inline-block;
-  margin: 8px;
   vertical-align:top;
 }
 .athlete_title{
@@ -314,7 +348,6 @@ a.right{
 .athlete_answer{
   font-family: Century Gothic;
   padding-top: 1px;
-  color: #003049;
   font-style: italic;
 }
 .athlete_image {
@@ -361,18 +394,33 @@ a.right{
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   }
   .paragraph {
+  font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  font-size: 16px;
   margin-bottom: 15px;
-  text-align: center;
+  text-align: justify;
   background-color: #F6F6F6;
-  /*height: 150px;*/
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  border:1px solid #c8c8c8;
+  border:3px solid #c8c8c8;
   border-radius:6px;
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
+}
+.rides-table {
+  margin-top: 10px;
+}
+.rides-table table, th, td {
+  background-color: #F6F6F6;
+  border-style:solid;
+  border-width: 1px;
+  border-color: #00254C;
+  text-align: center;
+}
+.rides-table th {
+  background-color: #00254C;
+  color:#EEB211;
 }
 /*YOUTUBE VIDEO*/
 .youtube-container { display: block; margin: 20px auto; width: 100%; max-width: 600px; }
