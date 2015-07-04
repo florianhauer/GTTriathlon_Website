@@ -290,6 +290,14 @@ a.right{
 .paragraph > a.button:hover{
     transform: scale(1.1);
 }
+/** Instagram **/
+.instagram-feed {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
 /** Athletes **/
 .members-box {
   min-height: 400px;
