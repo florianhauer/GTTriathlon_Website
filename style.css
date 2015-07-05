@@ -127,16 +127,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-#calendarMainImage {
-  width: 100%;
-  height: 300px;
-  background: url(images/calendar_image.jpg) no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .leftCol{
 	width: 40%;
  /* height: 100%;*/
@@ -214,14 +204,6 @@ a.right{
 .subtitle.smaller {
   font-size: 30px;
 }
-.content {
-  background-color: #F6F6F6;
-  padding: 10px;
-
-}
-.content.calendar {
-  /*height:700px;*/
-}
 
 /** SPONSORS **/
 .sponsor-div {
@@ -295,7 +277,6 @@ a.right{
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
 }
 
 /** Athletes **/
