@@ -317,8 +317,8 @@ a.right{
   font-size: 2.5em;
 }
 .athlete_info{
-  min-height: 350px;
-  max-height: 350px;
+  /*min-height: 350px;
+  max-height: 350px;*/
   max-width: 200px;
   font-weight: 900;
   overflow: hidden;
