@@ -17,7 +17,11 @@
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+  font-family: 'Trebuchet MS', Tahoma, sans-serif; 
+  font-size: 16px;
   z-index: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Declare heights because of positioning of img element */
@@ -35,10 +39,32 @@
   height:100%;
   max-width: none;
 }
-.carousel-inner > .item > .second-slide{
-  opacity: 0.9;
-}
-.carousel-inner > .item > .third-slide {
-  opacity: 0.9;
-}
+.carousel-caption > .button{
+  margin: auto;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #E0AA0F;
+  border: 2px solid;
+  border-color: #CA990E;
 
+  display: block;
+  /*height: 30px;*/
+  width: 25%;
+  height: 30px;
+  
+  /*Step 3: Text Styles*/
+  color: white;
+  text-align: center;
+  
+   
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; 
+}
+.carousel-caption > a.button {
+  text-decoration: none;
+}
+.carousel-caption > a.button:hover{
+    transform: scale(1.1);
+}
