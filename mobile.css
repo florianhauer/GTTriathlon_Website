@@ -31,10 +31,39 @@ body{
 #goldLine{
   height: auto;
 }
+.subtitle {
+  font-size: 30px;
+  line-height: 50px;
+}
 .carousel {
-  height: 150px;
+  /*height: 150px;*/
   /*margin-bottom: 60px;*/
   width: 100%;
+  height: auto;
+}
+.carousel-caption {
+  width:100%;
+  height: auto;
+}
+.carousel-inner{
+  height: auto;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  width:100%;
+  height: auto;
+}
+.carousel-inner > .item > img {
+  position: relative;
+  top:0;
+  left:0;
+  right:0;
+  margin:0;
+  width:100%;
+  height: auto;
+}
+.carousel-caption > a.button {
+  transform: scale(0.5);
 }
 .members-data {
   width:85%;
