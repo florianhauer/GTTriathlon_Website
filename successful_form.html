@@ -47,6 +47,7 @@
 $(function(){
   $("#goldLine").load("header.html", function() {
   	$("#nav_join_us").attr('id','active');		//set id of nav bar item to be highlighted instead of nav_calendar 
+        $("#menu-select").change(function(){window.location.href = $(this).children("option:selected").val();});
 }); 
   $("#footer").load("footer.html"); 
   $("#carousel_div").load("include_carousel.html"); 
