@@ -274,9 +274,8 @@ a.right{
 }
 /** Instagram **/
 .instagram-feed {
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px;
+  width:100%;
 }
 
 /** Athletes **/
