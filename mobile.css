@@ -42,10 +42,14 @@ body{
   height: auto;
 }
 .carousel-caption {
-  width:100%;
+  width:auto;
   height: auto;
+  bottom:-20px;
 }
 .carousel-inner{
+  height: auto;
+}
+.container{
   height: auto;
 }
 /* Declare heights because of positioning of img element */
@@ -63,6 +67,11 @@ body{
   height: auto;
 }
 .carousel-caption > a.button {
+  transform: scale(0.7);
+  margin:0;
+  width:auto;
+}
+.carousel-indicators {
   transform: scale(0.5);
 }
 .members-data {
