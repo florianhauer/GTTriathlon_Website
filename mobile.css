@@ -73,6 +73,11 @@ body{
   margin:0;
   width:auto;
 }
+.carousel-caption > a.button:hover {
+  transform: scale(0.7);
+  margin:0;
+  width:auto;
+}
 .carousel-indicators {
   transform: scale(0.5);
 }
