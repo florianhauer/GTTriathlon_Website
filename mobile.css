@@ -23,13 +23,15 @@ body{
   display:none;
 }
 #menu-select{
-  display:block;
+  display:inline-block;
 }
 .header-bg{
   display:none;
 }
 #goldLine{
   height: auto;
+  width:100%;
+  text-align:right;
 }
 .subtitle {
   font-size: 30px;
