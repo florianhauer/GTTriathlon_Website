@@ -1,6 +1,6 @@
 <!-- 
     Author: Daniel Barrundia & Florian Hauer
-    Description: This is the Calendar Page for the Georgia Tech Triathlon Website.
+    Description: This is the Athletes Page for the Georgia Tech Triathlon Website.
     Date Last Modified: June 26, 2015
     Version: 2.0
  -->
@@ -61,7 +61,7 @@
     <div id='athletes' class="members-box"></div>
     <!-- SPONSORS -->
     <div class="sponsor-div">
-	</div>
+  </div>
     <!-- FOOTER -->
     <div id="footer"><!-- Loaded from footer.html in script below -->
     </div>
@@ -71,7 +71,7 @@
 <script> 
     $(function(){
       $("#goldLine").load("header.html", function() {
-      	$("#nav_athletes").attr('id','active');		//set id of nav bar item to be highlighted instead of nav_calendar 
+        $("#nav_athletes").attr('id','active');    //set id of nav bar item to be highlighted instead of nav_calendar 
         $("#menu-select").change(function(){window.location.href = $(this).children("option:selected").val();});
     }); 
       $("#footer").load("footer.html"); 
@@ -84,19 +84,19 @@
 <script id="theTmpl" type="text/x-jsrender">
 <div class="members-data">
     <div class="athlete_name"> {{:name}} <img src="images/gt_tri_logo2.png" class="social-icon-athletesPage"></div>
-	<div class="athlete_image">
-	    <img src="images/athletes/{{:picture}}">
-	</div>
-	<div class="athlete_info">
+  <div class="athlete_image">
+      <img src="images/athletes/{{:picture}}">
+  </div>
+  <div class="athlete_info">
             <div class="athlete_title"> {{:title}} </div>
-	    <div> {{:major}} </div></br>
-	    <div class="athlete_question"> {{:quote_title1}} </div>
-	    <div class="athlete_answer">{{:quote1}} </div>
-	    <div class="athlete_question"> {{:quote_title2}} </div>
-	    <div class="athlete_answer">{{:quote2}} </div>
-	    <div class="athlete_question"> {{:quote_title3}} </div>
-	    <div class="athlete_answer">{{:quote3}} </div>
-	</div>
+      <div> {{:major}} </div></br>
+      <div class="athlete_question"> {{:quote_title1}} </div>
+      <div class="athlete_answer">{{:quote1}} </div>
+      <div class="athlete_question"> {{:quote_title2}} </div>
+      <div class="athlete_answer">{{:quote2}} </div>
+      <div class="athlete_question"> {{:quote_title3}} </div>
+      <div class="athlete_answer">{{:quote3}} </div>
+  </div>
 </div>
 </script>
 
@@ -106,9 +106,9 @@ var data = [
     "title" : "President",
     "name": "Nick Anderson",
     "picture" : "nick.jpg",
-    "major": "Industial and Systems Engineer",
+    "major": "Industrial & Systems Engineering",
     "quote_title1": "Favorite distance",
-    "quote1": "70.3",
+    "quote1": "Half-Ironman",
     "quote_title2": "Favorite race",
     "quote2": "2014 Collegiate Nationals, Tempe AZ",
     "quote_title3": "Fun Fact",
@@ -118,9 +118,9 @@ var data = [
     "title" : "Vice President",
     "name": "Daniel Barrundia",
     "picture" : "daniel.jpg",
-    "major": "Computer Science 18'",
+    "major": "Computer Science",
     "quote_title1": "Favorite distance",
-    "quote1": "Standar/Olympic Distance",
+    "quote1": "Standard/Olympic Distance",
     "quote_title2": "Favorite race",
     "quote2": "Chattanooga Waterfront Triathlon 2015 ",
     "quote_title3": "Fun Fact",
@@ -128,135 +128,193 @@ var data = [
   },
   {
     "title" : "Treasurer",
-    "name": "Elizabeth Faucer",
+    "name": "Elizabeth Faucher",
     "picture" : "liz.jpg",
     "major": "Math",
-    "quote_title1": "Favorite distance",
-    "quote1": "",
-    "quote_title2": "Favorite race",
-    "quote2": "",
-    "quote_title3": "Fun Fact",
-    "quote3": "Not a business major"
+    "quote_title1": "Favorite race",
+    "quote1": "Beach blast triathlon",
+    "quote_title2": "Post-Race meal",
+    "quote2": "Zaxby's",
+    "quote_title3": "Favorite theorem",
+    "quote3": "Law of large numbers"
   },
     {
     "title" : "Team Captain",
     "name": "Chris Douglas",
-    "picture" : "chris.jpg",
-    "major": "AE",
+    "picture" : "chris-1.jpg",
+    "major": "PhD Mechanical Engineering",
     "quote_title1": "Favorite distance",
-    "quote1": "Standar/Olympic",
+    "quote1": "Standard/Olympic",
+    "quote_title2": "Athlete Achievements",
+    "quote2": "Won six races, including 2014 SECTC Championship, and 2015 South-East Regional Championship",
+    "quote_title3": "Post-race meal",
+    "quote3": "Waffle House All-Star Breakfast Special"
+  },
+        {
+    "title" : "Web Master",
+    "name": "Florian Hauer",
+    "picture" : "flo.jpg",
+    "major": "PhD. Aerospace Engineering",
+    "quote_title1": "Favorite distance",
+    "quote1": "Olympic",
     "quote_title2": "Favorite race",
-    "quote2": "",
+    "quote2": "Intimidator Half-Ironman",
     "quote_title3": "Fun Fact",
-    "quote3": ""
+    "quote3": "I'm good at unintentionally creeping in pictures"
+  },
+        {
+    "title" : "",
+    "name": "Rachel Mann",
+    "picture" : "rachel.jpg",
+    "major": "Biomedical Engineering",
+    "quote_title1": "Favorite distance",
+    "quote1": "Olympic",
+    "quote_title2": "Favorite race",
+    "quote2": "Rev3 Anderson",
+    "quote_title3": "Fun Fact",
+    "quote3": "I can beat nick in triathlons"
+  },
+      {
+    "title" : "",
+    "name": "Tyler Subasic",
+    "picture" : "tyler.jpg",
+    "major": "Masters Business Administration",
+    "quote_title1": "Favorite distance",
+    "quote1": "Marathon",
+    "quote_title2": "Favorite race",
+    "quote2": "Boston Marathon",
+    "quote_title3": "Fun Fact",
+    "quote3": "Swimming and I are not very good friends"
+  },
+      {
+    "title" : "",
+    "name": "Thomas Easley",
+    "picture" : "thomas.jpg",
+    "major": "PhD Biomedical Engineering",
+    "quote_title1": "Favorite distance",
+    "quote1": "Sprint",
+    "quote_title2": "Favorite race",
+    "quote2": "Siesta Key Triathlon",
+    "quote_title3": "Fun Fact",
+    "quote3": "Once, left his shoes at home and ran barefoot the last leg of a race."
+  },
+        {
+    "title" : "",
+    "name": "Phillip Brook",
+    "picture" : "phil.jpg",
+    "major": "PhD Material Science Engineering",
+    "quote_title1": "Favorite distance",
+    "quote1": "Sprint",
+    "quote_title2": "Favorite race",
+    "quote2": "Lake Lanier",
+    "quote_title3": "Fun Fact",
+    "quote3": "I got into triathlon because I was biking into Tech from Decatur my first year of grad school to stay in shape"
+  },
+        {
+    "title" : "",
+    "name": "Marc Leber",
+    "picture" : "marc.jpg",
+    "major": "Biomedical Engineering",
+    "quote_title1": "Favorite distance",
+    "quote1": "Olympic",
+    "quote_title2": "Favorite race",
+    "quote2": "Huntsville Olympic",
+    "quote_title3": "Fun Fact",
+    "quote3": "I always wear the same swim cap every time I swim"
   },
       {
     "title" : "",
     "name": "Brian Doyle",
     "picture" : "brian.jpg",
-    "major": "MsE",
+    "major": "PhD Material Science Engineering",
     "quote_title1": "Favorite distance",
-    "quote1": "",
+    "quote1": "Half-Ironman",
     "quote_title2": "Favorite race",
-    "quote2": "",
+    "quote2": "Chatanooga Half-Ironman",
     "quote_title3": "Fun Fact",
-    "quote3": ""
+    "quote3": "I'm all about those polymers"
   },
       {
     "title" : "",
     "name": "Aaron Darton",
     "picture" : "aaron.jpg",
-    "major": "AE",
+    "major": "PhD Mechanical Engineering",
     "quote_title1": "Favorite distance",
-    "quote1": "",
+    "quote1": "Olympic",
     "quote_title2": "Favorite race",
-    "quote2": "",
+    "quote2": "Collegiate Nationals",
     "quote_title3": "Fun Fact",
-    "quote3": ""
+    "quote3": "Swimming is by far the most enjoyable out of the three sports"
   },
       {
     "title" : "",
     "name": "Clare Doyle",
     "picture" : "clare.jpg",
-    "major": "",
+    "major": "Biomedical Engineering",
     "quote_title1": "Favorite distance",
-    "quote1": "",
+    "quote1": "Sprint",
     "quote_title2": "Favorite race",
-    "quote2": "",
+    "quote2": "Lake Terramagus Sprint",
     "quote_title3": "Fun Fact",
-    "quote3": ""
+    "quote3": " I've done five 5ks and a half marathon in a cow suit"
   },
       {
     "title" : "",
     "name": "Taylor Vold",
     "picture" : "taylor.jpg",
-    "major": "AE",
+    "major": "Biology",
     "quote_title1": "Favorite distance",
-    "quote1": "",
+    "quote1": "Sprint",
     "quote_title2": "Favorite race",
-    "quote2": "",
+    "quote2": "Freshmen Cake Race",
     "quote_title3": "Fun Fact",
-    "quote3": ""
+    "quote3": "I'm an ordained minister"
   },
-      {
-    "title" : "Web Master",
-    "name": "Florian Hauer",
-    "picture" : "flo.jpg",
-    "major": "PhD. Aerospace Engineer",
-    "quote_title1": "Favorite distance",
-    "quote1": "",
-    "quote_title2": "Favorite race",
-    "quote2": "",
-    "quote_title3": "Fun Fact",
-    "quote3": ""
-  },
-      {
-    "title" : "",
-    "name": "Marc Leber",
-    "picture" : "marc.jpg",
-    "major": "BME",
-    "quote_title1": "Favorite distance",
-    "quote1": "",
-    "quote_title2": "Favorite race",
-    "quote2": "",
-    "quote_title3": "Fun Fact",
-    "quote3": ""
-  },
+
+
+
       {
     "title" : "",
     "name": "Kyle Boykin",
     "picture" : "kyle.jpg",
-    "major": "ME",
+    "major": "Mechanical Engineering",
     "quote_title1": "Favorite distance",
-    "quote1": "",
+    "quote1": "Olympic",
     "quote_title2": "Favorite race",
-    "quote2": "",
-    "quote_title3": "Fun Fact",
-    "quote3": ""
+    "quote2": "Chattanooga waterfront",
+    "quote_title3": "Greatest Achievement",
+        "quote3": "36:15 Peachtree 10k"
   },
-      {
-    "title" : "",
-    "name": "Phillip Brook",
-    "picture" : "phil.jpg",
-    "major": "MSE",
-    "quote_title1": "Favorite distance",
-    "quote1": "",
-    "quote_title2": "Favorite race",
-    "quote2": "",
-    "quote_title3": "Fun Fact",
-    "quote3": ""
-  },
+
+
+
+
+
+
       {
     "title" : "",
     "name": "Bryful Sun",
     "picture" : "bry.jpg",
     "major": "Aerospace Engineer",
     "quote_title1": "Favorite distance",
-    "quote1": "",
+    "quote1": "Half-Ironman",
     "quote_title2": "Favorite race",
-    "quote2": "",
+    "quote2": "Ironman 70.3 Boulder",
     "quote_title3": "Fun Fact",
-    "quote3": ""
+    "quote3": "I've been swimming since I can remember"
+  },
+
+    {
+    "title" : "",
+    "name": "Bradley Thomas",
+    "picture" : "brad.jpg",
+    "major": "Masters Mechanical Engineering",
+    "quote_title1": "Favorite distance",
+    "quote1": "Sprint",
+    "quote_title2": "Favorite race",
+    "quote2": "Trybee Triathlon",
+    "quote_title3": "Fun Fact",
+    "quote3": "Former collegiate soccer player turned triathlete"
   }
 ];
 
