@@ -352,7 +352,6 @@ a.right{
   display:inline-block;
   position: relative;
   width: 160px;
-  height: 200px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -408,6 +407,7 @@ a.right{
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
 }
+/*RIDES TABLE*/
 .rides-table {
   margin-top: 10px;
 }
@@ -421,6 +421,45 @@ a.right{
 .rides-table th {
   background-color: #00254C;
   color:#EEB211;
+}
+/*RACES TABLE*/
+.races-table table{
+  margin-left: auto;
+  margin-right: auto;
+}
+.races-table table, th, td {
+  background-color: #E3E3E3;
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+.sign-up > .button{
+  margin: auto;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #E0AA0F;
+  border: 2px solid;
+  border-color: #CA990E;
+
+  display: block;
+  /*height: 30px;*/
+  width: 100%;
+  
+  /*Step 3: Text Styles*/
+  color: white;
+  text-align: center;
+  font: 18px;
+   
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.sign-up > a.button {
+  text-decoration: none;
+}
+.sign-up > a.button:hover{
+    transform: scale(1.1);
 }
 /*YOUTUBE VIDEO*/
 .youtube-container { display: block; margin: 20px auto; width: 100%; max-width: 600px; }
